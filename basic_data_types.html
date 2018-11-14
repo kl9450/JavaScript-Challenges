@@ -9,16 +9,31 @@
     
 </head>
 <body>
+    <div id="demo">
+
+    </div>
 
     <script>
-        var Cars = ['Audi', 'BMW', 'Mercedes', 'Mustang'];
-            console.log(Cars.length);
+//Array       
+       var Cars = ['Audi', 'BMW', 'Mercedes', 'Mustang'];
+            console.log(Cars.BMW);
         // 4
         var first = Cars[0];
         // Audi
 
         var last = Cars[Cars.length - 1];
     // Mustang
+
+//Object
+    var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName;
     </script>   
 </body>
 </html>
