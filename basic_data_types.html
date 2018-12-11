@@ -15,25 +15,68 @@
 
     <script>
 //Array       
-       var Cars = ['Audi', 'BMW', 'Mercedes', 'Mustang'];
-            console.log(Cars.BMW);
-        // 4
-        var first = Cars[0];
-        // Audi
-
-        var last = Cars[Cars.length - 1];
-    // Mustang
+        var cars = ["Mercedes", "Audi", "BMW", "Jaguar"];
+        console.log('Mercedes');
 
 //Object
-    var person = {
-    firstName:"John",
-    lastName:"Doe",
-    age:50,
-    eyeColor:"blue"
-};
+        var person = {
+        firstName:"John",
+        lastName:"Doe",
+        age:50,
+        eyeColor:"blue"
+    };
 
-document.getElementById("demo").innerHTML =
-person.firstName + " " + person.lastName;
+    document.getElementById("demo").innerHTML =
+    person.firstName + " " + person.lastName;
+
+//String
+    var name = "Kodi";
+    var age = "21";
+    var gender = "Male"
+    console.log("Hello, my name is " +name, "and I am a " +age, "years old " +gender, ".")  
+    
+//Number
+    var x = 21;;
+    var y = 10;
+    console.log(x + y)
+    
+//Boolean
+    var YES = true;
+    var NO = false;
+
+    if(YES)
+    {
+        alert("This code block will be executed");
+    }
+
+    if(NO)
+    {
+        alert("This code block will not be executed");
+    }  
+
+//Null
+    function getVowels(str) {
+    var m = str.match(/[aeiou]/gi);
+    if (m === null) {
+        return 0;
+    }
+    return m.length;
+    }
+
+    console.log(getVowels('sky')); 
+
+//undefined
+    var x;
+
+    if (typeof x === "undefined") {
+        txt = "x is undefined";
+    } else {
+        txt = "x is defined";
+    } 
+
+    //Date
+    var d = new Date(2018, 11, 24,)
+    console.log(d)
     </script>   
 </body>
 </html>
